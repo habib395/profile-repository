@@ -1,0 +1,13 @@
+
+.services-list div {
+    background: #262626;
+    padding: 20px;
+    font-size: 12px;
+    font-weight: 300;
+    border-radius: 5px;
+    transition: background 0.5s, transform 0.5s;
+}
+.services-list div:hover {
+    background-color: #B923E1;
+    transform: translateY(-10px);
+}
