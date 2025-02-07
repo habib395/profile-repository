@@ -1,28 +1,28 @@
 import './Navbar.css';
 import logo from "../../assets/logo3.jpg.png";
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const Navbar = () => {
     return (
-        <div className='navbar-container flex items-center justify-between p-4 bg-opacity-90 backdrop-blur-sm shadow-lg'>
+        <div className='navbar-container fixed top-0 w-full z-50 flex items-center justify-between p-4 bg-opacity-90 backdrop-blur-sm shadow-lg'>
             {/* Logo */}
             <img className="h-16 w-auto transform hover:scale-110 transition-transform duration-300 cursor-pointer" src={logo} alt="Logo" />
 
             {/* Navigation Links */}
             <ul className="flex items-center list-none gap-14 text-xl font-medium">
                 <li className="nav-link relative hover:text-[#B923E1] transition-colors duration-300">
-                    Home
+                    <AnchorLink className="anchor-link" offset={50} href='#home'><p>Home</p></AnchorLink>
                 </li>
                 <li className="nav-link relative hover:text-[#B923E1] transition-colors duration-300">
-                    About Me
+                <AnchorLink className="anchor-link" offset={50} href='#about'><p>About Me</p></AnchorLink></li>
+                <li className="nav-link relative hover:text-[#B923E1] transition-colors duration-300">
+                <AnchorLink className="anchor-link" offset={50} href='#services'><p>Skills</p></AnchorLink>
                 </li>
                 <li className="nav-link relative hover:text-[#B923E1] transition-colors duration-300">
-                    Services
+                <AnchorLink className="anchor-link" offset={50} href='#portfolio'><p>Projects</p></AnchorLink>
                 </li>
                 <li className="nav-link relative hover:text-[#B923E1] transition-colors duration-300">
-                    Portfolio
-                </li>
-                <li className="nav-link relative hover:text-[#B923E1] transition-colors duration-300">
-                    Contact
+                <AnchorLink className="anchor-link" offset={50} href='#contact'><p>Contact</p></AnchorLink>
                 </li>
             </ul>
 

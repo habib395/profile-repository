@@ -1,9 +1,9 @@
-import profile_img from "../../assets/background3.jpg.png";
+import profile_img from "../../assets/heroImg.png"
 import { FaFacebook, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <section className="flex flex-col md:flex-row items-center gap-6 w-10/12 mx-auto py-16">
+    <section id="home" className="flex flex-col md:flex-row items-center gap-6 w-10/12 mx-auto py-32">
       {/* Left Section - Text Content */}
       <div className="text-center md:text-left space-y-6 flex-1">
         <h1 className="text-5xl font-bold leading-tight">

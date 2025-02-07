@@ -1,9 +1,10 @@
 import Project_data from "../../assets/Projects_data";
 import './Project.css'
+import { Link } from "react-router-dom";
 
 const Project = () => {
   return (
-    <div className="flex work-list flex-col items-center justify-center m-24 gap-20 w-11/12 mx-auto">
+    <div id="portfolio" className="flex work-list flex-col items-center justify-center m-6 gap-20 w-11/12 mx-auto">
       {/* Heading */}
       <div className="relative text-center">
         <h1 className="py-10 z-10 text-4xl font-bold text-[#B923E1]">
@@ -29,18 +30,15 @@ const Project = () => {
               </figure>
               <div className="layer p-4">
                 <h2 className="text-2xl font-semibold">{project.name}</h2>
+                <Link to={`/project/${project.id}`}>
                   <button className="btn bg-transparent rounded-lg transition-all duration-300">
                     Details
                   </button>
+                </Link>
               </div>
             </div>
           );
         })}
-      </div>
-
-      {/* Show More Button */}
-      <div className="flex justify-center rounded-full bg-[#B923E1] btn p-6 text-xl font-medium mb-10 transition-all duration-300 cursor-pointer">
-        <p>Show More</p>
       </div>
     </div>
   );

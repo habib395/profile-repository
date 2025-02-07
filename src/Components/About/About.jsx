@@ -1,9 +1,9 @@
 import "./About.css";
-import profile_image from "../../assets/userfff.jpg.png";
+import profile from "../../assets/profileImg.png"
 
 const About = () => {
   return (
-    <div className="flex flex-col items-center gap-16 m-20 px-6">
+    <div id="about" className="flex flex-col items-center gap-16 mx-20 px-6">
       {/* Title Section */}
       <div className="relative text-center">
         <h1 className="py-6 z-10 text-4xl font-bold text-[#B923E1]">
@@ -18,7 +18,7 @@ const About = () => {
         <div className="about-left flex-shrink-0">
           <img
             className="w-96 h-96 rounded-full shadow-xl hover:scale-110 transition-transform duration-500"
-            src={profile_image}
+            src={profile}
             alt="Profile"
           />
         </div>
@@ -47,19 +47,19 @@ const About = () => {
           <div className="space-y-6">
             <div className="flex flex-col gap-4">
               <div className="flex items-center gap-4 transition-transform duration-300 hover:scale-105">
-                <p className="w-32 text-[#B923E1]">HTML & CSS</p>
+                <p className="w-32 text-[#DF8909]">HTML & CSS</p>
                 <hr className="flex-1 h-2 rounded-full bg-gradient-to-r from-[#B923E1] to-[#ff004f] border-none" />
               </div>
               <div className="flex items-center gap-4 transition-transform duration-300 hover:scale-105">
-                <p className="w-32 text-[#B923E1]">React JS</p>
+                <p className="w-32 text-[#DF8909]">React JS</p>
                 <hr className="flex-1 h-2 rounded-full bg-gradient-to-r from-[#B923E1] to-[#ff004f] border-none" />
               </div>
               <div className="flex items-center gap-4 transition-transform duration-300 hover:scale-105">
-                <p className="w-32 text-[#B923E1]">JavaScript</p>
+                <p className="w-32 text-[#DF8909]">JavaScript</p>
                 <hr className="flex-1 h-2 rounded-full bg-gradient-to-r from-[#B923E1] to-[#ff004f] border-none" />
               </div>
               <div className="flex items-center gap-4 transition-transform duration-300 hover:scale-105">
-                <p className="w-32 text-[#B923E1]">Next JS</p>
+                <p className="w-32 text-[#DF8909]">Next JS</p>
                 <hr className="flex-1 h-2 rounded-full bg-gradient-to-r from-[#B923E1] to-[#ff004f] border-none" />
               </div>
             </div>
