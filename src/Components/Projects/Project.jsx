@@ -1,25 +1,26 @@
 import Project_data from "../../assets/Projects_data";
-import './Project.css'
+import "./Project.css";
 import { Link } from "react-router-dom";
 
 const Project = () => {
   return (
-    <div id="portfolio" className="flex work-list flex-col items-center justify-center m-6 gap-20 w-11/12 mx-auto">
-      {/* Heading */}
+    <div
+      id="portfolio"
+      className="flex work-list flex-col items-center justify-center sm:m-6 gap-20 w-11/12 mx-auto"
+    >
       <div className="relative text-center">
-        <h1 className="py-10 z-10 text-4xl font-bold text-[#B923E1]">
+        <h1 className=" py-2 sm:py-10 z-10 text-4xl font-bold text-[#B923E1]">
           My Projects
         </h1>
         <div className="absolute inset-x-0 bottom-0 w-full h-1 bg-gradient-to-r from-[#B923E1] to-[#ff004f]"></div>
       </div>
 
-      {/* Project Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         {Project_data.map((project, index) => {
           return (
             <div
               key={index}
-              className="work bg-base-100 image-full w-96 h-60 shadow-xl relative transition-all duration-300 transform hover:scale-110"
+              className="work bg-base-100 image-full w-full h-60 shadow-xl relative transition-all duration-300 transform hover:scale-110"
             >
               <figure>
                 <img

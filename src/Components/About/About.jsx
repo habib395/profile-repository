@@ -1,10 +1,9 @@
 import "./About.css";
-import profile from "../../assets/profileImg.png"
+import profile from "../../assets/profileImg.png";
 
 const About = () => {
   return (
-    <div id="about" className="flex flex-col items-center gap-16 mx-20 px-6">
-      {/* Title Section */}
+    <div id="about" className="flex flex-col items-center gap-16 sm:mx-20 px-6">
       <div className="relative text-center">
         <h1 className="py-6 z-10 text-4xl font-bold text-[#B923E1]">
           About Me
@@ -12,18 +11,15 @@ const About = () => {
         <div className="absolute inset-x-0 bottom-0 w-full h-1 bg-gradient-to-r from-[#B923E1] to-[#ff004f]"></div>
       </div>
 
-      {/* Profile and Information */}
       <div className="flex flex-wrap gap-16 justify-center items-center max-w-6xl">
-        {/* Profile Image */}
         <div className="about-left flex-shrink-0">
           <img
-            className="w-96 h-96 rounded-full shadow-xl hover:scale-110 transition-transform duration-500"
+            className="w-72 h-72 sm:w-96 sm:h-96 rounded-full shadow-xl hover:scale-110 transition-transform duration-500"
             src={profile}
             alt="Profile"
           />
         </div>
 
-        {/* About Content */}
         <div className="flex flex-col gap-8 max-w-2xl">
           <div className="text-base font-medium text-gray-300 space-y-6">
             <p>

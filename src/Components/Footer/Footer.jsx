@@ -2,13 +2,13 @@ import { FaCircleUser } from "react-icons/fa6";
 import { IoLogoBuffer } from "react-icons/io5";
 import { FaFacebook, FaGithub } from "react-icons/fa";
 
-
 const Footer = () => {
   return (
-    <footer id="footer" className="m-16 flex flex-col gap-8 bg-[#1a1a1f] text-white p-10 rounded-lg shadow-lg">
-      {/* Top Section */}
+    <footer
+      id="footer"
+      className="sm:m-16 flex flex-col gap-8 bg-[#1a1a1f] text-white p-10 rounded-lg shadow-lg"
+    >
       <div className="flex flex-col md:flex-row justify-between items-center">
-        {/* Logo & Text */}
         <div className="flex items-center gap-4">
           <IoLogoBuffer className="text-4xl text-[#DF8909]" />
           <p className="text-lg max-w-sm text-gray-300">
@@ -17,12 +17,11 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* Email Subscription */}
-        <div className="flex items-center gap-6 mt-6 md:mt-0">
-          <div className="flex items-center gap-3 p-3 rounded-full bg-[#32323B] transition-all duration-300 hover:bg-[#41414d]">
+        <div className="sm:flex items-center gap-8 mt-6 md:mt-0">
+          <div className="flex items-center gap-4 p-3 rounded-full bg-[#32323B] transition-all duration-300 hover:bg-[#41414d]">
             <FaCircleUser className="text-gray-400 text-lg" />
             <input
-              className="bg-transparent text-white text-base outline-none placeholder-gray-400 transition-all duration-300 focus:placeholder-gray-500 "
+              className="bg-transparent w-full text-white text-base outline-none placeholder-gray-400 transition-all duration-300 focus:placeholder-gray-500"
               type="email"
               placeholder="Enter your email"
             />
@@ -35,7 +34,6 @@ const Footer = () => {
 
       <hr className="border-gray-600" />
 
-      {/* Bottom Section */}
       <div className="flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm">
         <div className="hover:text-[#DF8909]">
           © 2025 Habibur Rahman. All rights reserved.

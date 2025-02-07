@@ -12,13 +12,10 @@ const Skills = () => {
               key={index}
               className="flex flex-col items-center gap-4 p-5 rounded-lg shadow-lg bg-gray-900 hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer"
             >
-              {/* Icon */}
               <IconComponent className="text-5xl text-[#B923E1]" />
 
-              {/* Skill Name */}
               <h2 className="text-xl font-bold text-white">{skill.s_name}</h2>
 
-              {/* Skill Description */}
               <p className="text-gray-300 text-sm text-center px-2">
                 {skill.s_disc}
               </p>
@@ -31,7 +28,6 @@ const Skills = () => {
 
   return (
     <div className="flex flex-col items-center justify-center gap-12 w-11/12 mx-auto py-10">
-      {/* Main Heading at the Top */}
       <div id="services" className="text-center relative">
         <h1 className="py-6 text-4xl font-bold text-[#B923E1] relative z-10">
           Skills
@@ -39,7 +35,6 @@ const Skills = () => {
         <div className="absolute inset-x-0 bottom-0 w-full h-1 bg-gradient-to-r from-[#B923E1] to-[#ff004f]"></div>
       </div>
 
-      {/* Frontend Skills */}
       <div className="w-full text-center">
         <h2 className="text-2xl font-semibold bg-gradient-to-l from-[#ff004f] to-[#B415FF] bg-clip-text text-transparent">
           Frontend Development
@@ -49,7 +44,6 @@ const Skills = () => {
         )}
       </div>
 
-      {/* Backend Skills */}
       <div className="w-full text-center">
         <h2 className="text-2xl font-semibold bg-gradient-to-l from-[#ff004f] to-[#B415FF] bg-clip-text text-transparent">
           Backend Development
@@ -59,7 +53,6 @@ const Skills = () => {
         )}
       </div>
 
-      {/* Tools */}
       <div className="w-full text-center">
         <h2 className="text-2xl font-semibold bg-gradient-to-l from-[#ff004f] to-[#B415FF] bg-clip-text text-transparent">
           Tools & Technologies

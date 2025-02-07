@@ -1,12 +1,14 @@
-import profile_img from "../../assets/heroImg.png"
+import profile_img from "../../assets/heroImg.png";
 import { FaFacebook, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <section id="home" className="flex flex-col md:flex-row items-center gap-6 w-10/12 mx-auto py-32">
-      {/* Left Section - Text Content */}
+    <section
+      id="home"
+      className="flex flex-col lg:flex-row items-center gap-6 w-10/12 mx-auto py-2 sm:py-32"
+    >
       <div className="text-center md:text-left space-y-6 flex-1">
-        <h1 className="text-5xl font-bold leading-tight">
+        <h1 className="text-5xl font-bold leading-tight pt-16">
           <span className="bg-gradient-to-r from-[#B923E1] to-[#ff004f] text-transparent bg-clip-text">
             I am Md. Habibur Rahman,
           </span>{" "}
@@ -18,7 +20,6 @@ const Hero = () => {
           user interfaces.
         </p>
 
-        {/* Buttons */}
         <div className="flex flex-col md:flex-row items-center gap-5 text-xl font-medium">
           <button className="px-6 py-2 rounded-full bg-gradient-to-r from-[#B923E1] to-[#ff004f] text-white font-semibold shadow-lg transition-all duration-300 transform hover:scale-110 hover:shadow-2xl">
             Connect With Me
@@ -29,26 +30,28 @@ const Hero = () => {
           >
             My Resume
           </button>
-          <a
-            href="https://github.com/habib395"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-4xl text-gray-400 hover:text-[#B923E1] transition"
-          >
-            <FaGithub />
-          </a>
-          <a
-            href="https://www.facebook.com/md.habibur.rahman.sujon.788802"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-4xl text-gray-400 hover:text-[#B923E1] transition"
-          >
-            <FaFacebook />
-          </a>
+
+          <div className="flex gap-2">
+            <a
+              href="https://github.com/habib395"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-4xl text-gray-400 hover:text-[#B923E1] transition"
+            >
+              <FaGithub />
+            </a>
+            <a
+              href="https://www.facebook.com/md.habibur.rahman.sujon.788802"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-4xl text-gray-400 hover:text-[#B923E1] transition"
+            >
+              <FaFacebook />
+            </a>
+          </div>
         </div>
       </div>
 
-      {/* Right Section - Profile Image */}
       <div className="flex justify-center items-center">
         <div className="relative w-72 h-72 md:w-96 md:h-96">
           <img
