@@ -3,8 +3,11 @@ import { MdEmail } from "react-icons/md";
 import { FaSquareWhatsapp } from "react-icons/fa6";
 import { IoHome } from "react-icons/io5";
 import { FaPhoneAlt } from "react-icons/fa";
+import Animation from "./Animation";
+
 
 const Contact = () => {
+  
   const whatsappNumber = "+8801742923499";
 
   const onSubmit = async (event) => {
@@ -76,6 +79,9 @@ const Contact = () => {
             <div className="flex items-center gap-3 text-gray-300 hover:text-[#DF8909] transition">
               <IoHome size={24} />
               <p className="text-lg">Rajshahi, Bangladesh</p>
+            </div>
+            <div>
+              <Animation></Animation>
             </div>
           </div>
         </div>
