@@ -1,6 +1,6 @@
 import { FaCircleUser } from "react-icons/fa6";
 import { IoLogoBuffer } from "react-icons/io5";
-import { FaFacebook, FaGithub } from "react-icons/fa";
+// import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -45,7 +45,15 @@ const Footer = () => {
           <p className="cursor-pointer hover:text-white transition">
             Privacy Policy
           </p>
-          <div className="flex gap-4">
+          {/* <div className="flex gap-4">
+            <a
+                          href="www.linkedin.com/in/md-habibur-rahman-9598a1368"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-2xl text-gray-400 hover:text-[#B923E1] transition"
+                        >
+                          <FaLinkedin />
+            </a>
             <a
               href="https://www.facebook.com/md.habibur.rahman.sujon.788802"
               target="_blank"
@@ -62,7 +70,7 @@ const Footer = () => {
             >
               <FaGithub />
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>

@@ -12,13 +12,16 @@ const Navbar = () => {
 
   return (
     <div className='navbar-container'>
-      <img className="h-12 w-auto transform hover:scale-110 transition-transform duration-300 cursor-pointer" src={logo} alt="Logo" />
+      <AnchorLink className="anchor-link" offset={50} href='#home'><p>
+        <img className="h-10 w-auto transform hover:scale-110 transition-transform duration-300 cursor-pointer" src={logo} alt="Logo" />
+        </p></AnchorLink>
+      
 
       <div className="lg:hidden flex items-center" onClick={toggleMenu}>
         <span className="text-3xl text-white">☰</span>
       </div>
 
-      <ul className={`flex items-center list-none sm:gap-14 text-xl font-medium ${isMenuOpen ? 'isMenuOpen' : 'lg:flex lg:flex-row lg:static lg:bg-transparent hidden'}`}>
+      <ul className={`flex items-center list-none sm:gap-14 text-lg font-medium ${isMenuOpen ? 'isMenuOpen' : 'lg:flex lg:flex-row lg:static lg:bg-transparent hidden'}`}>
         <li className="nav-link relative hover:text-[#B923E1] transition-colors duration-300">
           <AnchorLink className="anchor-link" offset={50} href='#home'><p>Home</p></AnchorLink>
         </li>
@@ -31,13 +34,13 @@ const Navbar = () => {
         <li className="nav-link relative hover:text-[#B923E1] transition-colors duration-300">
           <AnchorLink className="anchor-link" offset={50} href='#portfolio'><p>Projects</p></AnchorLink>
         </li>
-        <li className="nav-link relative hover:text-[#B923E1] transition-colors duration-300">
+        {/* <li className="nav-link relative hover:text-[#B923E1] transition-colors duration-300">
           <AnchorLink className="anchor-link" offset={50} href='#contact'><p>Contact</p></AnchorLink>
-        </li>
+        </li> */}
       </ul>
 
       <div className="connect-button px-6 py-3 flex items-center text-xl font-semibold hover:scale-105 transition-transform duration-300 cursor-pointer rounded-full bg-gradient-to-r from-[#B923E1] to-[#ff004f] text-white shadow-lg hover:shadow-xl">
-        Connect With Me
+        <AnchorLink className="anchor-link" offset={50} href='#contact'><p> Connect With Me</p></AnchorLink>
       </div>
     </div>
   );

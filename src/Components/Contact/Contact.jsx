@@ -5,6 +5,8 @@ import { IoHome } from "react-icons/io5";
 import { FaPhoneAlt } from "react-icons/fa";
 import Animation from "./Animation";
 
+import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
+
 
 const Contact = () => {
   
@@ -80,6 +82,32 @@ const Contact = () => {
               <IoHome size={24} />
               <p className="text-lg">Rajshahi, Bangladesh</p>
             </div>
+             <div className="flex gap-4">
+            <a
+                          href="www.linkedin.com/in/md-habibur-rahman-9598a1368"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-2xl text-gray-400 hover:text-[#B923E1] transition"
+                        >
+                          <FaLinkedin />
+            </a>
+            <a
+              href="https://www.facebook.com/md.habibur.rahman.sujon.788802"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-2xl text-gray-400 hover:text-[#B923E1] transition"
+            >
+              <FaFacebook />
+            </a>
+            <a
+              href="https://github.com/habib395"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-2xl text-gray-400 hover:text-[#B923E1] transition"
+            >
+              <FaGithub />
+            </a>
+          </div>
             <div>
               <Animation></Animation>
             </div>
@@ -88,7 +116,7 @@ const Contact = () => {
 
         <form
           onSubmit={onSubmit}
-          className="flex flex-col gap-6 w-full lg:w-1/2 bg-gray-900 p-8 rounded-xl shadow-lg"
+          className="flex flex-col gap-6 w-full lg:w-1/2 bg-gray-900 p-8 rounded-xl shadow-lg pt-4"
         >
           <h2 className="text-3xl font-semibold bg-gradient-to-l from-[#ff004f] to-[#B415FF] bg-clip-text text-transparent">
             Send a Message

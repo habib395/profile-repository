@@ -4,7 +4,7 @@ import "./Skills.css";
 const Skills = () => {
   const renderSkills = (skills) => {
     return (
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-6">
+      <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-6 mt-6">
         {skills.map((skill, index) => {
           const IconComponent = skill.s_icon;
           return (
@@ -16,9 +16,9 @@ const Skills = () => {
 
               <h2 className="text-xl font-bold text-white">{skill.s_name}</h2>
 
-              <p className="text-gray-300 text-sm text-center px-2">
+              {/* <p className="text-gray-300 text-sm text-center px-2">
                 {skill.s_disc}
-              </p>
+              </p> */}
             </div>
           );
         })}

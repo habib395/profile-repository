@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import profile_img from "../../assets/heroImg.png";
 import { FaFacebook, FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const Hero = () => {
   return (
@@ -15,7 +17,7 @@ const Hero = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        <h1 className="text-5xl font-bold leading-tight pt-16">
+        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight pt-16">
           <span className="bg-gradient-to-r from-[#B923E1] to-[#ff004f] text-transparent bg-clip-text">
             I am Md. Habibur Rahman,
           </span>{" "}
@@ -40,11 +42,13 @@ const Hero = () => {
           transition={{ delay: 0.8, duration: 0.8 }}
         >
           <motion.button
-            className="px-6 py-2 rounded-full bg-gradient-to-r from-[#B923E1] to-[#ff004f] text-white font-semibold shadow-lg transition-all duration-300 hover:scale-110"
+            className="rounded-full bg-gradient-to-r from-[#B923E1] to-[#ff004f] text-white font-semibold shadow-lg transition-all duration-300 hover:scale-110"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
-            Connect With Me
+            <div className="px-4 py-2 flex items-center text-lg font-semibold hover:scale-105 transition-transform duration-300 cursor-pointer rounded-full bg-gradient-to-r from-[#B923E1] to-[#ff004f] text-white shadow-lg hover:shadow-xl">
+                    <AnchorLink className="anchor-link" offset={50} href='#contact'><p>Connect With Me</p></AnchorLink>
+                  </div>
           </motion.button>
 
           <motion.button
@@ -53,7 +57,7 @@ const Hero = () => {
             whileTap={{ scale: 0.9 }}
           >
             <a
-              href="https://drive.google.com/file/d/1Kd0ATPOMK5uFIox0j7nbAGP3zXPM-gEx/view"
+              href="https://drive.google.com/file/d/1iTSonsxAjQu4Uoy1BwRqHyHQfoGQZkv1/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -62,6 +66,15 @@ const Hero = () => {
           </motion.button>
 
           <div className="flex gap-2">
+            <motion.a
+              href="www.linkedin.com/in/md-habibur-rahman-9598a1368"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-4xl text-gray-400 hover:text-[#B923E1] transition"
+              whileHover={{ scale: 1.2, rotate: 10 }}
+            >
+              <FaLinkedin />
+            </motion.a>
             <motion.a
               href="https://github.com/habib395"
               target="_blank"
@@ -92,7 +105,7 @@ const Hero = () => {
         transition={{ duration: 1 }}
       >
         <motion.div
-          className="relative w-72 h-72 md:w-96 md:h-96"
+          className="relative w-56 h-56 sm:w-72 sm:h-72 md:w-96 md:h-96"
           whileHover={{ scale: 1.05, rotate: 3 }}
         >
           <img

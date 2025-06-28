@@ -13,7 +13,7 @@
 
 .nav-link p {
     margin: 0;
-    font-size: 1.2rem; 
+    font-size: 1rem; 
 }
 
 .connect-button {
@@ -47,7 +47,7 @@
 
 @media screen and (min-width: 1025px) {
     .navbar-container {
-        padding: 1rem 3rem; 
+        padding: 0.5rem 2rem; 
     }
 
     .nav-link {
@@ -69,7 +69,7 @@
 
 @media screen and (max-width: 1024px) {
     .navbar-container {
-        padding: 0.5rem 1rem; 
+        padding: 0.5rem 0.5rem; 
     }
 
     .nav-link {
