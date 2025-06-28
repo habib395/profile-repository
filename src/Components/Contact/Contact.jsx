@@ -4,7 +4,6 @@ import { FaSquareWhatsapp } from "react-icons/fa6";
 import { IoHome } from "react-icons/io5";
 import { FaPhoneAlt } from "react-icons/fa";
 import Animation from "./Animation";
-
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 
 
@@ -82,7 +81,7 @@ const Contact = () => {
               <IoHome size={24} />
               <p className="text-lg">Rajshahi, Bangladesh</p>
             </div>
-             <div className="flex gap-4">
+             {/* <div className="flex gap-4">
             <a
                           href="www.linkedin.com/in/md-habibur-rahman-9598a1368"
                           target="_blank"
@@ -107,7 +106,38 @@ const Contact = () => {
             >
               <FaGithub />
             </a>
-          </div>
+          </div> */}
+           <div className="flex gap-2 mt-2 md:mt-0">
+                      {[
+                        {
+                          href: "https://www.linkedin.com/in/md-habibur-rahman-9598a1368",
+                          icon: <FaLinkedin />,
+                          label: "LinkedIn",
+                        },
+                        {
+                          href: "https://github.com/habib395",
+                          icon: <FaGithub />,
+                          label: "GitHub",
+                        },
+                        {
+                          href: "https://www.facebook.com/md.habibur.rahman.sujon.788802",
+                          icon: <FaFacebook />,
+                          label: "Facebook",
+                        },
+                      ].map(({ href, icon, label }, idx) => (
+                        <a
+                          key={idx}
+                          href={href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label={label}
+                          className="text-xl p-3 rounded-full border border-[#B923E1] text-[#B923E1] dark:text-[#B923E1] hover:text-[#B923E1] backdrop-blur-md shadow-md transition-all duration-300"
+                          whileHover={{ scale: 1.2, rotate: 10 }}
+                        >
+                          {icon}
+                        </a>
+                      ))}
+                    </div>
             <div>
               <Animation></Animation>
             </div>

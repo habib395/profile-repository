@@ -1,14 +1,29 @@
+import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
+import Typed from "typed.js";
 import profile_img from "../../assets/heroImg.png";
-import { FaFacebook, FaGithub } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const Hero = () => {
+  const elRef = useRef(null);
+
+  useEffect(() => {
+    const typed = new Typed(elRef.current, {
+      strings: ['Frontend Developer', 'Web Developer', 'Web Designer'],
+      typeSpeed: 200,
+      backSpeed: 200,
+      backDelay: 1000,
+      loop: true,
+    });
+
+    return () => typed.destroy(); 
+  }, []);
+
   return (
     <section
       id="home"
-      className="flex flex-col lg:flex-row items-center gap-6 w-10/12 mx-auto py-2 sm:py-32"
+      className="flex flex-col lg:flex-row items-center w-3/4 mx-auto py-10 sm:py-28"
     >
       {/* Left Side Content */}
       <motion.div
@@ -17,42 +32,81 @@ const Hero = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight pt-16">
-          <span className="bg-gradient-to-r from-[#B923E1] to-[#ff004f] text-transparent bg-clip-text">
-            I am Md. Habibur Rahman,
-          </span>{" "}
-          a frontend developer based in Bangladesh.
+        <h1 className="text-4xl sm:text-5xl lg:text-5xl font-bold leading-tight pt-2">
+          Md. Habibur Rahman, I'm a <br />
+          <span
+            ref={elRef}
+            className="lg:text-6xl bg-gradient-to-r from-[#B923E1] to-[#ff004f] text-transparent bg-clip-text font-bold"
+          ></span>
         </h1>
+
         <motion.p
-          className="text-lg text-gray-300 leading-relaxed max-w-lg"
+          className="text-lg text-gray-300 leading-relaxed max-w-xl"
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.5, duration: 1 }}
         >
-          Passionate frontend developer from Bangladesh with 1+ years of
-          experience, working with modern web technologies to create stunning
-          user interfaces.
+          Passionate frontend developer with 1+ years of experience, working with modern web technologies to create user interfaces.
         </motion.p>
 
         {/* Buttons and Social Icons */}
         <motion.div
-          className="flex flex-col md:flex-row items-center gap-5 text-xl font-medium"
+          className="flex flex-col md:flex-row items-center gap-4 text-xl font-medium"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.8, duration: 0.8 }}
         >
-          <motion.button
+          {/* Connect Button */}
+          {/* <motion.button
             className="rounded-full bg-gradient-to-r from-[#B923E1] to-[#ff004f] text-white font-semibold shadow-lg transition-all duration-300 hover:scale-110"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
-            <div className="px-4 py-2 flex items-center text-lg font-semibold hover:scale-105 transition-transform duration-300 cursor-pointer rounded-full bg-gradient-to-r from-[#B923E1] to-[#ff004f] text-white shadow-lg hover:shadow-xl">
-                    <AnchorLink className="anchor-link" offset={50} href='#contact'><p>Connect With Me</p></AnchorLink>
-                  </div>
-          </motion.button>
+            <div className="px-4 py-2 flex items-center text-base font-xs cursor-pointer rounded-full bg-gradient-to-r from-[#B923E1] to-[#ff004f] text-white shadow-lg hover:shadow-xl">
+              <AnchorLink offset={50} href="#contact">
+                Connect
+              </AnchorLink>
+            </div>
+          </motion.button> */}
 
+
+          {/* Social Icons */}
+          <div className="flex gap-2 mt-2 md:mt-0">
+            {[
+              {
+                href: "https://www.linkedin.com/in/md-habibur-rahman-9598a1368",
+                icon: <FaLinkedin />,
+                label: "LinkedIn",
+              },
+              {
+                href: "https://github.com/habib395",
+                icon: <FaGithub />,
+                label: "GitHub",
+              },
+              {
+                href: "https://www.facebook.com/md.habibur.rahman.sujon.788802",
+                icon: <FaFacebook />,
+                label: "Facebook",
+              },
+            ].map(({ href, icon, label }, idx) => (
+              <motion.a
+                key={idx}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={label}
+                className="text-xl p-3 rounded-full border border-[#B923E1] text-[#B923E1] dark:text-[#B923E1] hover:text-[#B923E1] backdrop-blur-md shadow-md transition-all duration-300"
+                whileHover={{ scale: 1.2, rotate: 10 }}
+              >
+                {icon}
+              </motion.a>
+            ))}
+          </div>
+        </motion.div>
+        
+          {/* Resume Button */}
           <motion.button
-            className="px-6 py-2 rounded-full border border-[#B923E1] text-[#B923E1] font-semibold transition-all duration-300 hover:bg-[#B923E1] hover:text-white hover:scale-110"
+            className="flex items-center font-xs cursor-pointer  bg-gradient-to-r from-[#B923E1] to-[#ff004f] hover:shadow-xl px-4 py-2 rounded-full text-base text-white transition-all duration-300 hover:bg-[#B923E1] hover:scale-110"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
@@ -61,45 +115,14 @@ const Hero = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              My Resume
+              Resume
             </a>
           </motion.button>
-
-          <div className="flex gap-2">
-            <motion.a
-              href="www.linkedin.com/in/md-habibur-rahman-9598a1368"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-4xl text-gray-400 hover:text-[#B923E1] transition"
-              whileHover={{ scale: 1.2, rotate: 10 }}
-            >
-              <FaLinkedin />
-            </motion.a>
-            <motion.a
-              href="https://github.com/habib395"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-4xl text-gray-400 hover:text-[#B923E1] transition"
-              whileHover={{ scale: 1.2, rotate: 10 }}
-            >
-              <FaGithub />
-            </motion.a>
-            <motion.a
-              href="https://www.facebook.com/md.habibur.rahman.sujon.788802"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-4xl text-gray-400 hover:text-[#B923E1] transition"
-              whileHover={{ scale: 1.2, rotate: -10 }}
-            >
-              <FaFacebook />
-            </motion.a>
-          </div>
-        </motion.div>
       </motion.div>
 
       {/* Right Side Profile Image */}
       <motion.div
-        className="flex justify-center items-center"
+        className="flex justify-center items-center mt-10 lg:mt-0"
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1 }}
@@ -130,3 +153,4 @@ const Hero = () => {
 };
 
 export default Hero;
+

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import "./About.css";
-import profile from "../../assets/profileImg.png";
+import profile from "../../assets/meo.png";
 
 const About = () => {
   return (
@@ -52,7 +52,7 @@ const About = () => {
           }}
         >
           <motion.div className="text-base font-medium text-gray-300 space-y-6">
-            <motion.p variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }}>
+            {/* <motion.p variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }}>
               I'm a passionate Frontend Developer with over 1 year of experience, specializing in creating modern, responsive, and visually stunning websites.
             </motion.p>
             <motion.p variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }}>
@@ -60,11 +60,17 @@ const About = () => {
             </motion.p>
             <motion.p variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }}>
               When I'm not coding, you'll find me exploring new technologies, playing video games, and sketching in my notebook. I enjoy learning new things, and I believe that curiosity is the key to growth.
-            </motion.p>
+            </motion.p> */}
+            <motion.p
+  variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }}
+  className="leading-relaxed">
+  I'm Md. Habibur Rahman, a passionate Frontend Developer with over 1 year of experience creating modern, responsive, and visually stunning websites. My journey began with mastering HTML and CSS, and since then, I have expanded my skills to include JavaScript, TypeScript, React.js, Next.js, and Redux Toolkit. Beyond frontend, I also work with backend technologies like Node.js, Express.js, MongoDB, PostgreSQL, Prisma, and Mongoose. I enjoy using tools like Firebase, Docker, AWS, Jest, Vitest, and GraphQL to build full-stack, scalable applications. Writing clean, efficient code and turning creative ideas into beautiful user experiences motivates me every day. Outside of coding, I love sketching, exploring emerging technologies, and playing strategy-based video games. I believe curiosity and continuous learning are the keys to personal and professional growth.
+</motion.p>
+
           </motion.div>
 
           {/* Skill Bars with Animated Width */}
-          <div className="space-y-6">
+          {/* <div className="space-y-6">
             {[
               { skill: "HTML & CSS", width: "90%" },
               { skill: "React JS", width: "85%" },
@@ -85,7 +91,7 @@ const About = () => {
                 />
               </motion.div>
             ))}
-          </div>
+          </div> */}
         </motion.div>
       </div>
     </motion.div>

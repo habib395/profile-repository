@@ -1,6 +1,6 @@
 import { FaCircleUser } from "react-icons/fa6";
 import { IoLogoBuffer } from "react-icons/io5";
-// import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaGithub, FaLinkedin, FaLinkedinIn } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -39,38 +39,38 @@ const Footer = () => {
           © 2025 Habibur Rahman. All rights reserved.
         </div>
         <div className="flex gap-6 mt-4 md:mt-0">
-          <p className="cursor-pointer hover:text-white transition">
-            Terms of Service
-          </p>
-          <p className="cursor-pointer hover:text-white transition">
-            Privacy Policy
-          </p>
-          {/* <div className="flex gap-4">
-            <a
-                          href="www.linkedin.com/in/md-habibur-rahman-9598a1368"
+          {/* Social Icons */}
+                    <div className="flex gap-4 mt-2 md:mt-0">
+                      {[
+                        {
+                          href: "https://www.linkedin.com/in/md-habibur-rahman-9598a1368",
+                          icon: <FaLinkedinIn />,
+                          label: "LinkedIn",
+                        },
+                        {
+                          href: "https://github.com/habib395",
+                          icon: <FaGithub />,
+                          label: "GitHub",
+                        },
+                        {
+                          href: "https://www.facebook.com/md.habibur.rahman.sujon.788802",
+                          icon: <FaFacebook />,
+                          label: "Facebook",
+                        },
+                      ].map(({ href, icon, label }, idx) => (
+                        <a
+                          key={idx}
+                          href={href}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-2xl text-gray-400 hover:text-[#B923E1] transition"
+                          aria-label={label}
+                          className="text-base p-1 rounded-full border border-[#B923E1] text-[#B923E1] dark:text-[#B923E1] hover:text-[#B923E1] backdrop-blur-md shadow-md transition-all duration-300"
+                          whileHover={{ scale: 1.2, rotate: 10 }}
                         >
-                          <FaLinkedin />
-            </a>
-            <a
-              href="https://www.facebook.com/md.habibur.rahman.sujon.788802"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-2xl text-gray-400 hover:text-[#B923E1] transition"
-            >
-              <FaFacebook />
-            </a>
-            <a
-              href="https://github.com/habib395"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-2xl text-gray-400 hover:text-[#B923E1] transition"
-            >
-              <FaGithub />
-            </a>
-          </div> */}
+                          {icon}
+                        </a>
+                      ))}
+                    </div>
         </div>
       </div>
     </footer>

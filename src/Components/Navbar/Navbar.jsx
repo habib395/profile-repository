@@ -39,8 +39,8 @@ const Navbar = () => {
         </li> */}
       </ul>
 
-      <div className="connect-button px-6 py-3 flex items-center text-xl font-semibold hover:scale-105 transition-transform duration-300 cursor-pointer rounded-full bg-gradient-to-r from-[#B923E1] to-[#ff004f] text-white shadow-lg hover:shadow-xl">
-        <AnchorLink className="anchor-link" offset={50} href='#contact'><p> Connect With Me</p></AnchorLink>
+      <div className="px-4 py-2 flex items-center text-base font-semibold hover:scale-105 transition-transform duration-300 cursor-pointer rounded-full bg-gradient-to-r from-[#B923E1] to-[#ff004f] text-white shadow-lg hover:shadow-xl">
+        <AnchorLink className="anchor-link" offset={50} href='#contact'><p>Contact Me</p></AnchorLink>
       </div>
     </div>
   );

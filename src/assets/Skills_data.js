@@ -188,7 +188,7 @@ const Skills_data = [
   {
     s_no: "14",
     s_icon: FaDatabase,
-    s_name: "API Development",
+    s_name: "API",
     s_disc: "APIs (Application Programming Interfaces) are used for integrating different services and enabling communication between systems.",
     proficiency: 75,
   },
