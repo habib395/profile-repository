@@ -147,7 +147,7 @@ const Hero = () => {
           tiltMaxAngleX={10}
           tiltMaxAngleY={10}
         >
-          <div className="relative w-56 h-56 sm:w-72 sm:h-72 md:w-96 md:h-96">
+          <div className="relative w-64 h-64 sm:w-72 sm:h-72 md:w-96 md:h-96">
             <img
               src={profile_img}
               alt="Profile"

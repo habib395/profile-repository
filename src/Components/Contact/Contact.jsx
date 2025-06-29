@@ -113,7 +113,6 @@ const Contact = () => {
                       ))}
                     </div>
             <div>
-              <Animation></Animation>
             </div>
           </div>
         </div>
