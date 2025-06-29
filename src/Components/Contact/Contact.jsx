@@ -81,32 +81,6 @@ const Contact = () => {
               <IoHome size={24} />
               <p className="text-lg">Rajshahi, Bangladesh</p>
             </div>
-             {/* <div className="flex gap-4">
-            <a
-                          href="www.linkedin.com/in/md-habibur-rahman-9598a1368"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-2xl text-gray-400 hover:text-[#B923E1] transition"
-                        >
-                          <FaLinkedin />
-            </a>
-            <a
-              href="https://www.facebook.com/md.habibur.rahman.sujon.788802"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-2xl text-gray-400 hover:text-[#B923E1] transition"
-            >
-              <FaFacebook />
-            </a>
-            <a
-              href="https://github.com/habib395"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-2xl text-gray-400 hover:text-[#B923E1] transition"
-            >
-              <FaGithub />
-            </a>
-          </div> */}
            <div className="flex gap-2 mt-2 md:mt-0">
                       {[
                         {

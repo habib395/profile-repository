@@ -66,7 +66,7 @@ const About = () => {
   className="leading-relaxed">
   I'm Md. Habibur Rahman, a passionate Frontend Developer with over 1 year of experience creating modern, responsive, and visually stunning websites. My journey began with mastering HTML and CSS, and since then, I have expanded my skills to include JavaScript, TypeScript, React.js, Next.js, and Redux Toolkit. Beyond frontend, I also work with backend technologies like Node.js, Express.js, MongoDB, PostgreSQL, Prisma, and Mongoose. I enjoy using tools like Firebase, Docker, AWS, Jest, Vitest, and GraphQL to build full-stack, scalable applications. Writing clean, efficient code and turning creative ideas into beautiful user experiences motivates me every day. Outside of coding, I love sketching, exploring emerging technologies, and playing strategy-based video games. I believe curiosity and continuous learning are the keys to personal and professional growth.
 </motion.p>
-
+ 
           </motion.div>
 
           {/* Skill Bars with Animated Width */}

@@ -34,9 +34,6 @@ const Navbar = () => {
         <li className="nav-link relative hover:text-[#B923E1] transition-colors duration-300">
           <AnchorLink className="anchor-link" offset={50} href='#portfolio'><p>Projects</p></AnchorLink>
         </li>
-        {/* <li className="nav-link relative hover:text-[#B923E1] transition-colors duration-300">
-          <AnchorLink className="anchor-link" offset={50} href='#contact'><p>Contact</p></AnchorLink>
-        </li> */}
       </ul>
 
       <div className="px-4 py-2 flex items-center text-base font-semibold hover:scale-105 transition-transform duration-300 cursor-pointer rounded-full bg-gradient-to-r from-[#B923E1] to-[#ff004f] text-white shadow-lg hover:shadow-xl">
