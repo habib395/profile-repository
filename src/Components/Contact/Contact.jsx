@@ -3,7 +3,6 @@ import { MdEmail } from "react-icons/md";
 import { FaSquareWhatsapp } from "react-icons/fa6";
 import { IoHome } from "react-icons/io5";
 import { FaPhoneAlt } from "react-icons/fa";
-import Animation from "./Animation";
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 
 

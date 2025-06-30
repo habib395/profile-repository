@@ -1,9 +1,10 @@
 import project1_img from "../assets/12.png";
 import project2_img from "../assets/11.png";
 import project3_img from "../assets/1.png";
-import project4_img from "../assets/nine.png";
 import project5_img from "../assets/eight.png";
 import project6_img from "../assets/seven.png";
+import project7_img from "../assets/group.png";
+
 
 const Project_data = [
   {
@@ -41,17 +42,6 @@ const Project_data = [
   },
   {
     id: 4,
-    name: "LIFE COACH",
-    image: project4_img,
-    description: "This project involves developing a Career Counseling Website to guide users in making informed career decisions. The website will offer personalized career advice, resources, and professional guidance through various services like career counseling sessions, resume reviews, and skill development recommendations.",
-    technology: "React, React Router, Firebase, Tailwind CSS, Daisy UI, Swiper.js, AOS Animation, ImgBB (for image hosting), Toast/SweetAlert (for notifications).",
-    live: "https://burly-box.surge.sh/",
-    github: "https://github.com/habib395/career-coach",
-    challenges: "Maintaining user engagement with personalized career suggestions and ensuring accurate career predictions.",
-    improvements: "Adding AI-driven career path suggestions and automated mentorship matching."
-  },
-  {
-    id: 5,
     name: "Gadget-Heaven",
     image: project5_img,
     description: "This project is a gadget e-commerce platform designed based on Figma specifications. It includes a responsive Navbar and Banner Section. The Gadget Section displays categories and a grid of 6-9 gadget cards, each with a Details button. The Gadget Details Page shows gadget-specific information with a cart and wishlist button.",
@@ -62,7 +52,7 @@ const Project_data = [
     improvements: "Incorporating virtual try-on features for gadgets and adding voice-assisted search functionality."
   },
   {
-    id: 6,
+    id: 5,
     name: "Ultimate Dream 11",
     image: project6_img,
     description: "This project involves creating an interactive Player Selection Website where users can browse available players, select them, and manage their selections dynamically. The interface is designed based on Figma specifications, ensuring a visually appealing and user-friendly experience.",
@@ -71,7 +61,18 @@ const Project_data = [
     github: "https://github.com/habib395/Ultimate-Dream-Eleven?tab=readme-ov-file",
     challenges: "Handling dynamic team selection with real-time player stats and ensuring fair player balancing.",
     improvements: "Adding AI-based player performance predictions and a collaborative team-building feature."
-  }
+  },
+  {
+  id: 6,
+  name: "DevDiscuss - Group Project",
+  image: project7_img, // Replace with your imported image variable
+  description: "DevDiscuss is a responsive developer forum designed for seamless discussion, question sharing, and content exploration. It features dark/light mode, Firebase authentication, and an interactive user experience. Users can post, edit, and manage questions, blogs, and events with ease.",
+  technology: "React, Tailwind CSS, Redux Toolkit, React Router DOM, Firebase Auth, JWT, Axios, Moment.js, React Helmet, Vite",
+  live: "http://null-car.surge.sh", // Replace with actual live link
+  github: "https://github.com/LIBx09/Dev_Discuss_Client", // Replace with actual repo link
+  challenges: "Integrating real-time content updates, ensuring role-based access, and managing nested discussion threads while keeping the UI fully responsive.",
+  improvements: "Adding real-time chat, advanced markdown support, and personalized feed based on user interactions."
+}
 ];
 
 export default Project_data;
